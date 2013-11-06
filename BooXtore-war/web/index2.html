@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Administration BooXtore</title>
+		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	</head>
+
+	<body>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    	<script src="js/bootstrap.js"></script>	
+		<header>
+		    <div class="navbar navbar-inverse navbar-fixed-top">
+      			<div class="container">
+        			<div class="navbar-header">
+          				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            				<span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+          				</button>
+          				<a class="navbar-brand" href="#">BooXtore - Panel d'administration</a>
+        			</div>
+
+        			<div class="navbar-collapse collapse">
+        				<ul class="nav navbar-nav">
+            				<li class="dropdown">
+              					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+              					<ul class="dropdown-menu">
+	               					<li><a href="#">Livres / Catégories</a></li>
+	                				<li><a href="#">Commandes</a></li>
+	                                <li class="divider"></li>
+	                				<li><a href="#">Déconnexion</a></li>
+              					</ul>
+            				</li>
+          				</ul>
+
+          				<form class="navbar-form navbar-right">
+			            	<div class="form-group">
+			              		<input type="text" placeholder="Rechercher livre" class="form-control">
+			            	</div>
+			            	<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+          				</form>
+        			</div><!--/.navbar-collapse -->
+      			</div>
+    		</div>				
+		</header>
+
+		<div class="container">
+			<p><br/><br/><br/>
+				<h4>Bonjour Florent,</h4>
+				Bienvenue sur la partie administrative de BooXtore
+			</p>
+
+			<div class="panel panel-default">
+			  <!-- Default panel contents -->
+			  	<div class="panel-heading">
+			  	<strong>Gestion de livres</strong>
+			  	<button type="button" class="btn btn-xs btn-primary pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Ajouter un livre</button>
+			  	</div>
+			  		<div class="panel-body">
+			    		<p>Voici un accès à la liste des livres en stock, vous pourrez à partir d'ici rajouter de nouveaux livres, ou encore éditer ou supprimer des livres existants.</p>
+			    		<div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> <strong>Attention!</strong> Toute suppression est définitive. En cas d'erreur, il vous sera demandé de recréer le livre en question.</div>
+			  		</div>
+
+			  		<!-- Table -->
+			  		<table class="table">
+			    		<tr>
+			    			<th><div class="text-center">Titre</div></th>
+			    			<th><div class="text-center">Auteur</div></th>
+			    			<th><div class="text-center">Stock</div></th>
+			    			<th><div class="text-center">Editer</div></th>
+			    			<th><div class="text-center">Supprimer</div></th>
+			    		</tr>
+			    		<tr>
+			    			<td><div class="text-center">Harry Potter n°1</div></td>
+			    			<td><div class="text-center">J.K. Rowling</div></td>
+			    			<td><div class="text-center">17</div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-pencil"></span></button></div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button></div></td>
+			    		</tr>
+			    		<tr>
+			    			<td><div class="text-center">Harry Potter n°2</div></td>
+			    			<td><div class="text-center">J.K. Rowling</div></td>
+			    			<td><div class="text-center">18</div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-pencil"></span></button></div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button></div></td>
+			    		</tr>
+			    		<tr>
+			    			<td><div class="text-center">World War Z</div></td>
+			    			<td><div class="text-center">Max Brooks</div></td>
+			    			<td><div class="text-center">21</div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-pencil"></span></button></div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button></div></td>
+			    		</tr>
+			    		<tr>
+			    			<td><div class="text-center">Mein Kampf</div></td>
+			    			<td><div class="text-center">Adolf Hitler</div></td>
+			    			<td><div class="text-center">09</div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-pencil"></span></button></div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button></div></td>
+			    		</tr>			    					    		
+			  		</table>
+				</div>
+			</div>
+    	</div>
+		
+		<div class="container">
+<div class="panel panel-default">
+			  <!-- Default panel contents -->
+			  	<div class="panel-heading">
+			  	<strong>Gestion des catégories</strong>
+			  	<button type="button" class="btn btn-xs btn-primary pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Ajouter une catégorie</button>
+			  	</div>
+			  		<div class="panel-body">
+			    		<div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> <strong>Attention!</strong> Toute suppression est définitive. En cas d'erreur, il vous sera demandé de recréer la catégorie supprimée.</div>
+			  		</div>
+
+			  		<!-- Table -->
+			  		<table class="table">
+			    		<tr>
+			    			<th><div class="text-center">Catégorie</div></th>
+			    			<th><div class="text-center">Editer</div></th>
+			    			<th><div class="text-center">Supprimer</div></th>
+			    		</tr>
+			    		<tr>
+			    			<td><div class="text-center">Fantasy</div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-pencil"></span></button></div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button></div></td>
+			    		</tr>
+			    		<tr>
+			    			<td><div class="text-center">Science-fiction</div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-pencil"></span></button></div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button></div></td>
+			    		</tr>
+			    		<tr>
+			    			<td><div class="text-center">Historique</div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-pencil"></span></button></div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button></div></td>
+			    		</tr>
+			    		<tr>
+			    			<td><div class="text-center">Policier / Thriller</div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-pencil"></span></button></div></td>
+			    			<td><div class="text-center"><button type="button" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></button></div></td>
+			    		</tr>			    					    		
+			  		</table>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
